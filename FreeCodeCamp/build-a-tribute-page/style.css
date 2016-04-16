@@ -1,0 +1,16 @@
+body {
+  background-color: #fff;
+}
+.photo {
+margin: -15px;
+}
+.dotted{
+  border-right: 4px dotted #000; 
+  border-bottom: 4px dotted #000;
+}
+.mono {
+  font-family: Monospace;
+}
+#angelspit_list, #solo_list {
+  padding-left: 7px;
+}
