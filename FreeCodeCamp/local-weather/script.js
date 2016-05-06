@@ -39,6 +39,7 @@ $(document).ready(function(){
 		"few clouds": "https://kohrvid.github.io/FreeCodeCamp/local-weather/images/few-clouds.jpg",
 		"scattered clouds": "https://kohrvid.github.io/FreeCodeCamp/local-weather/images/scattered-clouds.png",
 	  "broken clouds": "https://kohrvid.github.io/FreeCodeCamp/local-weather/images/broken-clouds.jpg",
+"overcast clouds": "https://kohrvid.github.io/FreeCodeCamp/local-weather/images/broken-clouds.jpg",
 		"shower rain": "https://kohrvid.github.io/FreeCodeCamp/local-weather/images/shower-rain.jpg",
 		"rain": "https://kohrvid.github.io/FreeCodeCamp/local-weather/images/rain.jpg",
 		"light rain": "https://kohrvid.github.io/FreeCodeCamp/local-weather/images/light-rain.jpg",
@@ -48,8 +49,8 @@ $(document).ready(function(){
 	 }
 	 for(var i in weatherImage){
       if (i === api.weather[0].description){
-        $("body").css("background", "url(" +weatherImage[i]+") no-repeat");
-        $("body").css("background-size", "100%");
+        $("body").css("background", "url(" +weatherImage[i]+") no-repeat 100% 100% fixed");
+      $("body").css("background-position", "-20px -40px");
 	   }
 	 };
   }
